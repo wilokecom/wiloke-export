@@ -495,13 +495,31 @@ function wiloke_export_wp( $args = array() ) {
                         ?></wp:meta_value>
                     </wp:termmeta>
                     <wp:termmeta>
+                        <wp:meta_key><?php echo wxr_cdata(hsBlogCorePrefix('featured_img_id'));?></wp:meta_key>
+                        <wp:meta_value><?php echo wxr_cdata( Term::getTermMeta(intval( $c->term_id ),hsBlogCorePrefix
+                            ('featured_img_id')) );
+                            ?></wp:meta_value>
+                    </wp:termmeta>
+                    <wp:termmeta>
                         <wp:meta_key><?php echo wxr_cdata(hsBlogCorePrefix('icon_img'));?></wp:meta_key>
                         <wp:meta_value><?php echo wxr_cdata( Term::getTermMeta(intval( $c->term_id ),hsBlogCorePrefix('icon_img')) );
                             ?></wp:meta_value>
                     </wp:termmeta>
                     <wp:termmeta>
+                        <wp:meta_key><?php echo wxr_cdata(hsBlogCorePrefix('icon_img_id'));?></wp:meta_key>
+                        <wp:meta_value><?php echo wxr_cdata( Term::getTermMeta(intval( $c->term_id ),hsBlogCorePrefix
+                            ('icon_img_id')) );
+                            ?></wp:meta_value>
+                    </wp:termmeta>
+                    <wp:termmeta>
                         <wp:meta_key><?php echo wxr_cdata(hsBlogCorePrefix('color'));?></wp:meta_key>
                         <wp:meta_value><?php echo wxr_cdata( Term::getTermMeta(intval( $c->term_id ),hsBlogCorePrefix('color')) );
+                            ?></wp:meta_value>
+                    </wp:termmeta>
+                    <wp:termmeta>
+                        <wp:meta_key><?php echo wxr_cdata(hsBlogCorePrefix('color_id'));?></wp:meta_key>
+                        <wp:meta_value><?php echo wxr_cdata( Term::getTermMeta(intval( $c->term_id ),hsBlogCorePrefix
+                            ('color_id')) );
                             ?></wp:meta_value>
                     </wp:termmeta>
                 </wp:category>
